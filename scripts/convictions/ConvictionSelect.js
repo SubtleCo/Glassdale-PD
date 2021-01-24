@@ -15,6 +15,6 @@ const render = convictionsCollection => {
         <select class="dropdown" id="crimeSelect">
             <option value="0">Select a crime...</option>
             ${
-                convictionsCollection.map(conviction => `<option>${conviction}</option>}`)
+                convictionsCollection.map(conviction => `<option>${conviction}</option>}`).join("")
             }`
 }
