@@ -1,6 +1,6 @@
 import { CriminalList } from "./CriminalList.js"
 
-"id", "age", "eyeColor", "name", "workHistory", "phone", "address", "incarceration", "conviction", "arrestingOfficer", "known_associates"
+// "id", "age", "eyeColor", "name", "workHistory", "phone", "address", "incarceration", "conviction", "arrestingOfficer", "known_associates"
 
 export const Criminal = (criminal) => {
     const termStart = new Date(criminal.incarceration.start).toLocaleDateString('en-US');
