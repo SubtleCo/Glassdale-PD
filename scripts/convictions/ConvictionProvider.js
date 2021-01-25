@@ -1,8 +1,6 @@
 let convictions = [];
 
-export const useConvictions = () => {
-    return [...convictions];
-}
+export const useConvictions = () => [...convictions]
 
 export const getConvictions = () => {
     return fetch("https://criminals.glassdale.us/crimes")

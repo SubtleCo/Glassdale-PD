@@ -11,6 +11,8 @@ export const Criminal = (criminal) => {
         <p class="criminalAge">Age: ${criminal.age}</p>
         <p class="criminalTermStart">Term start: ${termStart}</p>
         <p class="criminalTermEnd">Term end: ${termEnd}</p>
+        <p class="arrestingOfficer">Arresting Officer: ${criminal.arrestingOfficer}</p>
+        <p class="criminalConviction">Conviction: ${criminal.conviction}</p>
     </section>
     `
 }
