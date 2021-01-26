@@ -1,0 +1,15 @@
+#noteForm {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#noteForm--date, #noteForm--suspect {
+    align-self: flex-start;
+    margin: 5px;
+}
+
+#saveNote {
+    align-self: flex-end;
+    margin: 5px;
+}
