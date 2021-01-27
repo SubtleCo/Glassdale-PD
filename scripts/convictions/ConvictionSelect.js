@@ -1,4 +1,3 @@
-import { useCriminals } from '../criminals/CriminalDataProvider.js';
 import { getConvictions, useConvictions } from './ConvictionProvider.js';
 
 const eventHub = document.querySelector(".container")
@@ -31,5 +30,4 @@ const render = convictionsCollection => {
                 convictionsCollection.map(conviction => `<option value=${conviction.id} label=${conviction.name}>${conviction.name}</option>`).join("")
             }
         </select>`
-        console.log(convictionsCollection)
 }
