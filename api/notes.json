@@ -1,5 +1,22 @@
 {
   "notes": [
-   
+    {
+      "date": "",
+      "suspect": "",
+      "text": "asdf",
+      "id": 1
+    },
+    {
+      "date": "2021-01-12",
+      "suspect": "ok",
+      "text": "ok to be a man is something.",
+      "id": 2
+    },
+    {
+      "date": "",
+      "suspect": "",
+      "text": "tickle me elmo",
+      "id": 3
+    }
   ]
 }

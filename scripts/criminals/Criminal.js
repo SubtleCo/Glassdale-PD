@@ -1,5 +1,3 @@
-import { CriminalList } from "./CriminalList.js"
-
 // "id", "age", "eyeColor", "name", "workHistory", "phone", "address", "incarceration", "conviction", "arrestingOfficer", "known_associates"
 
 export const Criminal = (criminal) => {
@@ -11,6 +9,8 @@ export const Criminal = (criminal) => {
         <p class="criminalAge">Age: ${criminal.age}</p>
         <p class="criminalTermStart">Term start: ${termStart}</p>
         <p class="criminalTermEnd">Term end: ${termEnd}</p>
+        <button id="associates--${criminal.id}">Associate Alibis</button>
     </section>
     `
 }
+

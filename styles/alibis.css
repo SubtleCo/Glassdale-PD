@@ -1,0 +1,9 @@
+.alibisList{
+    display: flex;
+}
+
+.alibisCard{
+    border: 1px dotted blue;
+    margin: 20px;
+    padding: 10px;
+}
