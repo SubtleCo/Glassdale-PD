@@ -1,5 +1,11 @@
 @import './criminals.css';
+@import './notes.css';
 
 .filters {
     display: flex;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
 }

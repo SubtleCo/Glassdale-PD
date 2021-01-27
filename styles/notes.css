@@ -1,0 +1,26 @@
+.noteListContainer{
+    flex-basis: 30%;
+}
+
+#noteForm {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#noteForm--date, #noteForm--suspect {
+    align-self: flex-start;
+    margin: 5px;
+}
+
+#saveNote {
+    align-self: flex-end;
+    margin: 5px;
+}
+
+.note{
+    margin: 10px;
+    border: 1px dotted black;
+
+}
+
