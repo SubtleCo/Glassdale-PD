@@ -1,5 +1,6 @@
 @import './criminals.css';
 @import './notes.css';
+@import './alibis.css';
 
 .filters {
     display: flex;
