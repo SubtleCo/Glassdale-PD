@@ -1,15 +1,15 @@
-.content--left{
-    flex-basis: 70%;
-}
-
-.criminalsContainer {
+.peopleContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
-.criminal {
+.criminal, .witness {
     border: 1px dotted black;
     flex-basis: 200px;
     margin-top: 20px;
+}
+
+.peopleTitle{
+    text-align: center;
 }

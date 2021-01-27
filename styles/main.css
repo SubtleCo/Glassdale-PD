@@ -1,4 +1,4 @@
-@import './criminals.css';
+@import './people.css';
 @import './notes.css';
 @import './alibis.css';
 
@@ -9,4 +9,13 @@
 .content{
     display: flex;
     flex-direction: row;
+}
+
+.content--left{
+    flex-basis: 70%;
+}
+
+.peopleSelectionButtons{
+    display: flex;
+    justify-content: space-evenly;
 }
