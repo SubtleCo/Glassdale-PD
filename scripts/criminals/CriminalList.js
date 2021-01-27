@@ -2,7 +2,8 @@ import { useCriminals, getCriminals } from './CriminalDataProvider.js'
 import { Criminal } from './Criminal.js'
 import { useConvictions } from "../convictions/ConvictionProvider.js"
 
-const targetElement = document.querySelector(".criminalsContainer")
+const targetElement = document.querySelector(".peopleContainer")
+const peopleTitle = document.querySelector('.peopleTitle')
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("crimeChosen", e => {
@@ -29,6 +30,10 @@ eventHub.addEventListener("officerChosen", e => {
     }
 })
 
+eventHub.addEventListener("criminalsSelected", e => {
+    CriminalList()
+})
+
 export const CriminalList = () => {
     getCriminals()
         .then( () => {
@@ -39,5 +44,6 @@ export const CriminalList = () => {
 }
 
 const render = criminalCollection => {
+    peopleTitle.innerHTML = "Criminals"
     targetElement.innerHTML = criminalCollection.map(criminal => Criminal(criminal)).join("")
 }

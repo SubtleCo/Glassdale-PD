@@ -1,22 +1,16 @@
 {
   "notes": [
     {
-      "date": "",
-      "suspect": "",
-      "text": "asdf",
+      "date": "2021-01-27",
+      "suspect": "Target",
+      "text": "-Seems to drive a large pickup truck\n-Seems short\n-Seems to have old red shoes\n-Seems to eat / be around fish\n-Maybe works at a car dealership\n-Has a pet",
       "id": 1
     },
     {
-      "date": "2021-01-12",
-      "suspect": "ok",
-      "text": "ok to be a man is something.",
+      "date": "2021-01-27",
+      "suspect": "Abelardo Reilly",
+      "text": "Seems to work at a dealership",
       "id": 2
-    },
-    {
-      "date": "",
-      "suspect": "",
-      "text": "tickle me elmo",
-      "id": 3
     }
   ]
 }
