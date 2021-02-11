@@ -2,15 +2,21 @@
   "notes": [
     {
       "date": "2021-01-27",
-      "suspect": "Target",
+      "criminalID": "4",
       "text": "-Seems to drive a large pickup truck\n-Seems short\n-Seems to have old red shoes\n-Seems to eat / be around fish\n-Maybe works at a car dealership\n-Has a pet",
       "id": 1
     },
     {
       "date": "2021-01-27",
-      "suspect": "Abelardo Reilly",
+      "criminalID": "4",
       "text": "Seems to work at a dealership",
       "id": 2
+    },
+    {
+      "date": "2021-02-11",
+      "criminalID": "4",
+      "text": "Hi there friend",
+      "id": 3
     }
   ]
 }
