@@ -1,6 +1,6 @@
 import { getCriminals, useCriminals } from "../criminals/CriminalDataProvider.js"
 import { Note } from "./Note.js"
-import { getNotes, useNotes } from "./NotesDataProvider.js"
+import { deleteNote, getNotes, useNotes } from "./NotesDataProvider.js"
 
 const targetElement = document.querySelector('.noteList')
 const eventHub = document.querySelector('.container')
@@ -11,6 +11,19 @@ eventHub.addEventListener("showNotesClicked", e => {
 
 eventHub.addEventListener("noteStateChanged", e => {
     if (document.querySelector(".note")) NoteList()
+})
+
+eventHub.addEventListener("click", e => {
+    if (e.target.id.startsWith("deleteNote--")){
+        const [prefix, id] = e.target.id.split("--")
+        deleteNote(id).then(
+            () => {
+                const updatedNotes = useNotes()
+                const criminals = useCriminals()
+                render(updatedNotes, criminals)
+            }
+        )
+    }
 })
 
 const render = (notes, criminals) => {
