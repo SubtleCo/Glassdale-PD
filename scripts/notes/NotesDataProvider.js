@@ -12,8 +12,8 @@ eventHub.addEventListener("click", e => {
         e.preventDefault()
         const newNote = {
             date: document.querySelector("#noteForm--date").value,
-            suspect: document.querySelector("#noteForm--suspect").value,
-            text: document.querySelector("#noteForm--text").value,
+            criminalID: document.querySelector("#noteForm--criminal").value,
+            text: document.querySelector("#noteForm--text").value
         }
         saveNote(newNote)
     }
