@@ -1,6 +1,8 @@
 import { useCriminals, getCriminals } from './CriminalDataProvider.js'
 import { Criminal } from './Criminal.js'
 import { useConvictions } from "../convictions/ConvictionProvider.js"
+import { getCriminalFacilities, useCriminalFacilities } from '../facilities/CriminalFacilityProvider.js'
+import { getFacilities, useFacilities } from '../facilities/FacilityProvider.js'
 
 const targetElement = document.querySelector(".peopleContainer")
 const peopleTitle = document.querySelector('.peopleTitle')
@@ -36,14 +38,25 @@ eventHub.addEventListener("criminalsSelected", e => {
 
 export const CriminalList = () => {
     getCriminals()
+    .then(getCriminalFacilities)
+    .then(getFacilities)
         .then( () => {
             const appStateCriminals = useCriminals()
-            render(appStateCriminals)
+            const facilities = useFacilities()
+            const criminalFacilities = useCriminalFacilities()
+            render(appStateCriminals, facilities, criminalFacilities)
         })
     
 }
 
-const render = criminalCollection => {
+const render = (criminals, allFacilities, criminalFacilities) => {
     peopleTitle.innerHTML = "Criminals"
-    targetElement.innerHTML = criminalCollection.map(criminal => Criminal(criminal)).join("")
+    targetElement.innerHTML = criminals.map(criminal => {
+        const facilityRelationships = criminalFacilities.filter(relationship => relationship.criminalId === criminal.id)
+        const facilities = facilityRelationships.map(relationship => {
+            const matchingFacility = allFacilities.find(facility => facility.id === relationship.facilityId)
+            return matchingFacility
+        })
+        return Criminal(criminal, facilities)
+    }).join("")
 }
