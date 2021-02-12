@@ -4,8 +4,8 @@ import { useConvictions } from "../convictions/ConvictionProvider.js"
 import { getCriminalFacilities, useCriminalFacilities } from '../facilities/CriminalFacilityProvider.js'
 import { getFacilities, useFacilities } from '../facilities/FacilityProvider.js'
 
-const targetElement = document.querySelector(".peopleContainer")
-const peopleTitle = document.querySelector('.peopleTitle')
+const targetElement = document.querySelector(".cardContainer")
+const peopleTitle = document.querySelector('.cardTitle')
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("crimeChosen", e => {
