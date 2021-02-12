@@ -21,10 +21,14 @@
 .note{
     margin: 10px;
     border: 1px dotted black;
+    background-color: rgb(218, 196, 199);
+    border-radius: 2%;
 
 }
 
 .noteFormContainer{
     margin: 50px;
-    border: 2px solid blue;
+    border: 1px dotted black;
+    border-radius: 2%;
+    background-color: rgb(231, 231, 200);
 }

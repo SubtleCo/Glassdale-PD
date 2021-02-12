@@ -5,9 +5,9 @@ import { getWitnesses, useWitnesses } from "./WitnessDataProvider.js"
 
 
 //target element, event hub
-const targetElement = document.querySelector('.peopleContainer')
+const targetElement = document.querySelector('.cardContainer')
 const eventHub = document.querySelector('.container')
-const peopleTitle = document.querySelector('.peopleTitle')
+const peopleTitle = document.querySelector('.cardTitle')
 
 //eventListener for button
 eventHub.addEventListener("witnessesSelected", e => {

@@ -1,0 +1,29 @@
+.cardContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.criminal, .witness, .facility {
+    border: 1px dotted black;
+    flex-basis: 200px;
+    margin-top: 20px;
+    border-radius: 2%;
+    padding: 5px;
+}
+
+.cardTitle{
+    text-align: center;
+}
+
+.criminal {
+    background-color: rgb(236, 236, 92);
+}
+
+.witness {
+    background-color: rgb(135, 224, 99);
+}
+
+.facility {
+    background-color: rgb(161, 233, 209);
+}
