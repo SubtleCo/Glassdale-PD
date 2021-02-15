@@ -27,8 +27,9 @@ eventHub.addEventListener("click", e => {
 })
 
 const render = (notes, criminals) => {
+    debugger
     const allNotesConvertedToStrings = notes.map(note => {
-        const criminal = criminals.find(criminal => criminal.id === parseInt(note.criminalID))
+        const criminal = criminals.find(criminal => criminal.id === parseInt(note.criminalId))
         return Note(note, criminal)
     }).join("")
     targetElement.innerHTML = allNotesConvertedToStrings
