@@ -2,9 +2,21 @@
   "notes": [
     {
       "date": "2021-01-27",
-      "criminalID": "4",
+      "criminalId": 4,
       "text": "Seems to work at a dealership",
       "id": 2
+    },
+    {
+      "date": "2021-02-01",
+      "criminalId": 1,
+      "text": "Test Note. TEST EDIT!",
+      "id": 3
+    },
+    {
+      "date": "2021-02-16",
+      "criminalId": 5,
+      "text": "Test Note Again",
+      "id": 4
     }
   ]
 }
